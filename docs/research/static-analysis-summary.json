@@ -1,0 +1,164 @@
+﻿{
+  "record": "ev_f5cfd5ab00f574774199cdf144eb1f7af594d06f6286632856a80d3421efbf4d",
+  "parent_evidence_id": "ev_70f9c2f9bd6b97a402797a6994b2ca57264f68be719f1291478654d36f4bc8a7",
+  "artifact": {
+    "name": "app.asar",
+    "digest": {
+      "sha256": "dc2f4bf69399bf0093f50143702e9760073d1df53b5bf795a6d6849741d0f08c"
+    },
+    "local_path": "<local Termius installation>\\resources\\app.asar",
+    "format": "asar",
+    "architecture": null
+  },
+  "operation": "analyze_javascript_application",
+  "source_selection": {
+    "requested_paths": [
+      "ui-process/assets/HostsScreenSidebar-221ca8fe.js",
+      "ui-process/assets/HostsFiltersHeader-cbccb9ea.js",
+      "ui-process/assets/PortForwardingRulePresenter-4942c31a.js",
+      "ui-process/assets/SftpSettings-0af044b2.js",
+      "ui-process/assets/LogsSettings-1cc25f55.js",
+      "ui-process/assets/Vaults-d8ada1cd.js",
+      "ui-process/assets/ProFeatures-e310eebe.js",
+      "ui-process/assets/FreeFeatures-f3d50a10.js"
+    ],
+    "unselected_files": 8159
+  },
+  "statistics": {
+    "relevant_files": 8167,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 154798,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 8,
+    "skipped_javascript_files": 0,
+    "visited_ast_nodes": 33787,
+    "findings": 619,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "coverage": {
+    "application": {
+      "status": "partial",
+      "truncated": false,
+      "omitted_count": null,
+      "limits": []
+    },
+    "semantic": {
+      "status": "partial",
+      "truncated": false,
+      "omitted_nodes": null,
+      "omitted_relations": null,
+      "limits": [],
+      "families": [
+        {
+          "family": "boundary",
+          "status": "partial",
+          "retained_relations": 4,
+          "omitted_relations": null,
+          "unknown_count": 6268
+        },
+        {
+          "family": "call-flow",
+          "status": "partial",
+          "retained_relations": 364,
+          "omitted_relations": null,
+          "unknown_count": 8240
+        },
+        {
+          "family": "child-process",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null,
+          "unknown_count": 6268
+        },
+        {
+          "family": "closure",
+          "status": "partial",
+          "retained_relations": 2835,
+          "omitted_relations": null,
+          "unknown_count": 6268
+        },
+        {
+          "family": "configuration",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null,
+          "unknown_count": 6268
+        },
+        {
+          "family": "data-flow",
+          "status": "partial",
+          "retained_relations": 21501,
+          "omitted_relations": null,
+          "unknown_count": 8648
+        },
+        {
+          "family": "event",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null,
+          "unknown_count": 6268
+        },
+        {
+          "family": "object-flow",
+          "status": "partial",
+          "retained_relations": 1624,
+          "omitted_relations": null,
+          "unknown_count": 8147
+        },
+        {
+          "family": "promise-ownership",
+          "status": "partial",
+          "retained_relations": 23,
+          "omitted_relations": null,
+          "unknown_count": 6289
+        },
+        {
+          "family": "request",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null,
+          "unknown_count": 6268
+        },
+        {
+          "family": "resource-lifecycle",
+          "status": "partial",
+          "retained_relations": 0,
+          "omitted_relations": null,
+          "unknown_count": 6268
+        },
+        {
+          "family": "timer",
+          "status": "partial",
+          "retained_relations": 2,
+          "omitted_relations": null,
+          "unknown_count": 6271
+        }
+      ]
+    },
+    "application_unknowns": 8145,
+    "semantic_unknowns": 81471
+  },
+  "limitations": [
+    "Artifact integrity metadata contradicts observed bytes at node_modules/@termius/node-pty/win-x64/winpty-agent.exe; the observed bytes are untrusted.",
+    "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+    "Caller-selected source analysis leaves 8159 inventoried files outside analysis scope. Inventory identity covers the complete artifact; relationships through unselected sources remain unknown.",
+    "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+    "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+    "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+    "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+    "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+    "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+    "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+    "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ]
+}
+

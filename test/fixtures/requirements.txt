@@ -1,0 +1,3 @@
+# Copyright 2026 SSH Mate contributors
+# SPDX-License-Identifier: GPL-3.0-only
+paramiko==5.1.0

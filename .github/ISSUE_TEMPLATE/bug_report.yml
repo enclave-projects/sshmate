@@ -1,0 +1,34 @@
+﻿name: Bug report
+description: Report a reproducible issue in SSH Mate
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove hostnames, IPs, usernames, fingerprints, commands, keys, passwords and vault data from logs or screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: SSH Mate version
+      placeholder: 0.2.0
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use a disposable test server where possible. Do not include secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Windows and Flutter environment
+    validations:
+      required: false
+
