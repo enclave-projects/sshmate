@@ -1,8 +1,8 @@
 ﻿# SSH Mate
 
-**A private, offline first SSH workspace for Windows.** SSH Mate brings server management, encrypted local credentials, interactive terminals, SFTP and port forwarding into one open source Flutter desktop app.
+**A local first, offline SSH workspace for Windows.** SSH Mate brings server management, encrypted local credentials, interactive terminals, SFTP and port forwarding into one open source Flutter desktop app.
 
-[![Windows CI](https://github.com/enclave-projects/ssh-mate-desktop/actions/workflows/windows.yml/badge.svg)](https://github.com/enclave-projects/ssh-mate-desktop/actions/workflows/windows.yml)
+[![Windows CI](https://github.com/enclave-projects/sshmate/actions/workflows/windows.yml/badge.svg)](https://github.com/enclave-projects/sshmate/actions/workflows/windows.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 SSH Mate is built for people who want a practical SSH workspace without a required vendor account, subscription, telemetry or hosted service. It works with user-selected SSH servers and stores its workspace in a password-protected local vault. It is an independent project and is not affiliated with Termius.
@@ -32,7 +32,7 @@ The previews use disposable test hosts and contain no account data or credential
 
 ## Get started
 
-Download a Windows build from [GitHub Releases](https://github.com/enclave-projects/ssh-mate-desktop/releases) when one is published, or [build from source](#build-from-source). Release artifacts should be downloaded only from this project’s official releases page.
+Download a Windows build from [GitHub Releases](https://github.com/enclave-projects/sshmate/releases) when one is published, or [build from source](#build-from-source). Release artifacts should be downloaded only from this project’s official releases page.
 
 On first launch, create a vault password with at least 12 characters. Add a host, then add or select an identity in **Keychain**. If no identity is assigned, SSH Mate asks for an SSH password for that session. Verify a first-use server fingerprint with an independent trusted source before accepting it.
 
@@ -77,3 +77,4 @@ Windows release files are produced in `build/windows/x64/runner/Release/`. Distr
 ## License
 
 SSH Mate is free software licensed under the GNU General Public License, version 3 only. See [LICENSE](LICENSE). Third-party components retain their respective licenses; xterm.dart’s MIT license and local compatibility patch are documented in [`third_party/xterm`](third_party/xterm/SSH_MATE_PATCHES.md).
+
